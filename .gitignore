@@ -1,0 +1,8 @@
+# 只删除仓库记录，本机文件还保留
+git rm --cached -r .vs
+git rm --cached -r bin
+git rm --cached credit_system.vcxproj.user
+git rm --cached "~$实验要求.docx"
+
+git add .
+git commit -m "移除不需要提交的缓存、编译产物"
